@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+
+<p>Hello,</p>
+<p>You have received a new leave request with the following information:</p><ul>
+<li>Email: <?= form.requester_Email ?></li>
+<li>Start date: <?= form.requester_Content.startDate.toLocaleDateString() ?></li>
+<li>End date: <?= form.requester_Content.endDate.toLocaleDateString() ?></li>
+<li>Leave code: <?= form.requester_Content.leaveCode ?></li>
+<li>Notes: <?= form.requester_Content.notes ?></li>
+</ul>
+<p>Please approve or deny this request.</p>
+<p><strong><a style="color: #97bf0d;" href="<?= form.approval_Url ?>">Approve</a></strong> or <strong><a style="color: #e95f47;" href="<?= form.deny_Url ?>">Deny</a></strong></p>
+
+
+</body>
+
+  
+</html>

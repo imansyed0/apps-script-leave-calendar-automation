@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+
+<p>Hello,</p>
+<p>You request has been approved and placed in the Europe calendar:</p><ul>
+<li>Email: <?= form.requester_Email ?></li>
+<li>Start date: <?= form.requester_Content.startDate.toLocaleDateString() ?></li>
+<li>End date: <?= form.requester_Content.endDate.toLocaleDateString() ?></li>
+<li>Leave code: <?= form.requester_Content.leaveCode ?></li>
+<li>Notes: <?= form.requester_Content.notes ?></li>
+</ul>
+
+<p>Best wishes,</p>
+<p>Ops team</p>
+
+
+</body>
+
+  
+</html>
